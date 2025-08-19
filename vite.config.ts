@@ -18,4 +18,23 @@ export default defineConfig({
          customDomId: "__svg__icons__dom__",
       }),
    ],
+   server: {
+      port: 3000,
+   },
+   resolve: {
+      alias: {
+         "@/": `${path.resolve(__dirname, "src")}/`,
+         "@/components/": `${path.resolve(__dirname, "src/components")}/`,
+         "@/styles/": `${path.resolve(__dirname, "src/styles")}/`,
+         "@/lib/": `${path.resolve(__dirname, "src/lib")}/`,
+         "@/utils/": `${path.resolve(__dirname, "src/utils")}/`,
+         "@/constants/": `${path.resolve(__dirname, "src/constants")}/`,
+         "@/config/": `${path.resolve(__dirname, "src/config")}/`,
+      },
+   },
+   base: "/",
+   build: {
+      outDir: "dist",
+      sourcemap: true,
+   },
 });

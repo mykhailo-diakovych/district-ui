@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-import { Icon } from "./components/ui/icon/icon.tsx";
+import { Icon } from "@/components/ui/icon/icon.tsx";
 
 function App() {
    const [count, setCount] = useState(0);

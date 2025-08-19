@@ -52,6 +52,43 @@ export default tseslint.config([
                ],
                "newlines-between": "always",
                alphabetize: { order: "ignore" },
+               pathGroups: [
+                  {
+                     pattern: "@/**",
+                     group: "internal",
+                     position: "before",
+                  },
+                  {
+                     pattern: "@/components/**",
+                     group: "internal",
+                     position: "before",
+                  },
+                  {
+                     pattern: "@/styles/**",
+                     group: "internal",
+                     position: "before",
+                  },
+                  {
+                     pattern: "@/lib/**",
+                     group: "internal",
+                     position: "before",
+                  },
+                  {
+                     pattern: "@/utils/**",
+                     group: "internal",
+                     position: "before",
+                  },
+                  {
+                     pattern: "@/constants/**",
+                     group: "internal",
+                     position: "before",
+                  },
+                  {
+                     pattern: "@/config/**",
+                     group: "internal",
+                     position: "before",
+                  },
+               ],
                pathGroupsExcludedImportTypes: ["builtin"],
             },
          ],

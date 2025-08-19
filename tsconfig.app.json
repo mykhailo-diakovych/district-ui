@@ -22,7 +22,17 @@
     "erasableSyntaxOnly": true,
     "noFallthroughCasesInSwitch": true,
     "noUncheckedSideEffectImports": true,
-     "allowSyntheticDefaultImports": true
+    "allowSyntheticDefaultImports": true,
+
+     "paths": {
+        "@/": ["./src"],
+        "@/components/*": ["./src/components/*"],
+        "@/styles/*": ["./src/styles/*"],
+        "@/lib/*": ["./src/lib/*"],
+        "@/utils/*": ["./src/utils/*"],
+        "@/constants/*": ["./src/constants/*"],
+        "@/config/*": ["./src/config/*"],
+     }
   },
   "include": ["src"]
 }
